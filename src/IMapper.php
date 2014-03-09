@@ -1,6 +1,8 @@
 <?php
 namespace Librette\Forms;
 
+use Nette;
+
 /**
  * @author David Matějka
  */
@@ -13,7 +15,7 @@ interface IMapper
 	 * @param Form $form
 	 * @return void
 	 */
-	function load(Form $form);
+	function load(Nette\Forms\Form $form);
 
 
 	/**
@@ -22,5 +24,5 @@ interface IMapper
 	 * @param Form $form
 	 * @return void
 	 */
-	function save(Form $form);
+	function save(Nette\Forms\Form $form);
 }
