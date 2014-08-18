@@ -6,5 +6,6 @@ namespace Librette\Forms;
  */
 class Form extends \Nette\Application\UI\Form implements IFormWithMapper
 {
+
 	use TFormWithMapper;
 }

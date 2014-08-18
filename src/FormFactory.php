@@ -1,9 +1,9 @@
 <?php
 namespace Librette\Forms;
 
+use Nette;
 use Nette\Forms\IFormRenderer;
 use Nette\Localization\ITranslator;
-use Nette;
 
 /**
  * @author David Matejka

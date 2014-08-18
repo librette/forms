@@ -4,23 +4,26 @@ namespace Librette\Forms;
 use Nette\Application\UI\Presenter;
 use Nette\ComponentModel\IComponent;
 
+/**
+ * @author David Matejka
+ */
 trait TFormWithMapper
 {
 
 	/** @var array of callbacks invoked before onSuccess callback */
-	public $onBeforeSuccess = array();
+	public $onBeforeSuccess = [];
 
 	/** @var array of callbacks invoked after onSuccess callback */
-	public $onAfterSuccess = array();
+	public $onAfterSuccess = [];
 
 	/** @var array of callbacks invoked right before mapper loads data */
-	public $onLoad = array();
+	public $onLoad = [];
 
 	/** @var array of callbacks invoked right after mapper loads data */
-	public $onAfterLoad = array();
+	public $onAfterLoad = [];
 
 	/** @var array of callbacks invoked when form is attached to presenter */
-	public $onAttached = array();
+	public $onAttached = [];
 
 	/** @var IMapper */
 	protected $mapper;
@@ -29,7 +32,7 @@ trait TFormWithMapper
 	public function fireEvents()
 	{
 		$originalOnSuccess = $this->onSuccess;
-		$this->onSuccess = array();
+		$this->onSuccess = [];
 		$this->onSuccess[] = function () use ($originalOnSuccess) {
 			$events = [];
 			$events[] = $this->onBeforeSuccess;
