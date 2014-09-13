@@ -1,7 +1,7 @@
 <?php
 namespace Librette\Forms;
 
-use Nette\Forms\Form;
+use Nette\Forms\Form as NForm;
 
 /**
  * @author David Matejka
@@ -10,7 +10,7 @@ interface IValidationMapper extends IMapper
 {
 
 	/**
-	 * @param Form $form
+	 * @param NForm $form
 	 * @return void
 	 */
 	public function validate(Form $form);
