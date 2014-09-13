@@ -13,5 +13,5 @@ interface IValidationMapper extends IMapper
 	 * @param NForm $form
 	 * @return void
 	 */
-	public function validate(Form $form);
+	public function validate(NForm $form);
 }
