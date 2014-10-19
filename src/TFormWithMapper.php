@@ -60,8 +60,8 @@ trait TFormWithMapper
 
 			}
 		};
-		if($this->mapper && $this->mapper instanceof IValidationMapper) {
-			$this->onValidate[] = array($this->mapper, 'validate');
+		if ($this->mapper && $this->mapper instanceof IValidationMapper) {
+			$this->onValidate[] = [$this->mapper, 'validate'];
 		}
 
 		parent::fireEvents();
