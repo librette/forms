@@ -8,8 +8,9 @@ use Nette\Localization\ITranslator;
 /**
  * @author David Matejka
  */
-class FormFactory extends Nette\Object implements IFormFactory
+class FormFactory implements IFormFactory
 {
+	use Nette\SmartObject;
 
 	/** @var IFormRenderer */
 	protected $renderer;

@@ -11,9 +11,9 @@
 	],
 	"require": {
 		"php": ">=5.4",
-		"nette/utils": "~2.2",
-		"nette/forms": "~2.2",
-		"nette/application": "~2.2"
+		"nette/utils": "~2.4 || ~3.0",
+		"nette/forms": "~2.4 || ~3.0",
+		"nette/application": "~2.4 || ~3.0"
 	},
 	"autoload": {
 		"psr-4": {
